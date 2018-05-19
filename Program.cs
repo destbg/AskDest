@@ -5,8 +5,8 @@ using static System.Console;
 namespace AskDest {
     class Program {
         static void Main() {
-            string[] askAnswres = null;
-            string[] banWords = null;
+            string[] askAnswres;
+            string[] banWords;
             if (!File.Exists("AskAnswers.txt")) {
                 WriteLine("The file AskAnswers.txt is missing!");
                 return;
@@ -56,6 +56,12 @@ namespace AskDest {
                     || check[i] == "has"
                     || check[i] == "hasnt"
                     || check[i] == "hasn't"
+                    || check[i] == "can"
+                    || check[i] == "cant"
+                    || check[i] == "can't"
+                    || check[i] == "could"
+                    || check[i] == "couldnt"
+                    || check[i] == "couldn't"
                     || check[i] == "should"
                     || check[i] == "shouldnt"
                     || check[i] == "shouldn't"
